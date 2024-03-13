@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="../public/style.css">
+    <style>
+        div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h1 {
+            font-size: 300%;
+            text-align: center;
+            color: palevioletred;
+            ;
+        }
+
+        .pourquoi {
+            width: 50%;
+            font-size: xx-large;
+        }
+
+        .img08 {
+            width: 30%;
+            height: 40%;
+        }
+
+        h6 {
+            font-size: medium;
+        }
+
+        p {
+            margin: 5%;
+            font-size: large;
+        }
+        .imageOrigine{
+            margin: 15%;
+            width: 30%;
+            height: 5%;
+        }
+        .origine{
+            margin: 3%;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <header> 
+        <!-- incorporation du de la barre NAV via EJS -->
+        <%- include('menu') %> 
+    </header>
+    <h1>Pourquoi le 08 Mars</h1>
+    <div>
+
+        <p class=" pourquoi">Officialisée en 1977 par l'Organisation des Nations Unies, la journée pour les droits des
+            femmes couvre plusieurs
+            événements avec comme objectif de célébrer les avancées des droits des femmes. Quelles ont été les
+            différentes
+            étapes de l'instauration du 8 mars à travers le monde ? Quel est le thème retenu cette année ? Réponses avec
+            Vie-publique.fr.
+        </p>
+        <img class="img08"
+            src="https://static.vecteezy.com/ti/vecteur-libre/p1/695319-conception-de-cartes-de-voeux-pour-la-journee-de-la-femme-du-8-mars-vectoriel.jpg"
+            alt="Echec" />
+    </div>
+    <h1>Origines</h1>
+    <div class="origine">
+        <img class="imgOrigine" src="https://i.pinimg.com/736x/45/c6/b8/45c6b871675c5bbd9e9060e7fb8115a9.jpg" alt="Echec" />
+        <p>Les Nations Unies ont officialisé la journée du 8 mars en 1977. Toutefois, cette journée puise ses origines
+            dans l'histoire des luttes ouvrières et des manifestations de femmes au tournant du XXe siècle en Amérique
+            du Nord et en Europe.
+
+            À partir de 1909, les États-Unis, sous l'impulsion de femmes socialistes américaines, décident d’organiser
+            chaque année, le dernier dimanche de février, une "Journée nationale des femmes" (National Woman's Day) pour
+            célébrer l’égalité des droits civiques.
+
+            C’est lors de la deuxième conférence internationale des femmes socialistes, en 1910 à Copenhague, que Clara
+            Zetkin, journaliste et militante allemande, appelle les "femmes socialistes de tous les pays" à organiser
+            chaque année une Journée internationale des femmes. Elle est célébrée dès le 19 mars 1911 en Autriche,
+            Allemagne, Danemark et en Suisse.
+
+            En Russie, une "Journée internationale des ouvrières" est célébrée le 3 mars 1913 puis le 8 mars 1914. Lors
+            du 8 mars 1917 (23 février 1917 selon le calendrier julien en vigueur dans le pays à ce moment-là), des
+            femmes manifestent dans les rues de Petrograd (Saint-Pétersbourg) pour exiger "le pain et la paix". Cette
+            manifestation marque le début de la révolution russe et la date du 8 mars sera officiellement célébrée en
+            Union soviétique à partir de 1921.
+
+            Après la Seconde Guerre Mondiale, le 8 mars est célébré dans de nombreux pays. C'est en 1977 que les Nations
+            Unies officialisent la Journée internationale des femmes, incitant ainsi tous les pays du monde à fêter les
+            droits des femmes.</p>
+
+    </div>
+</body>
+
+</html>
